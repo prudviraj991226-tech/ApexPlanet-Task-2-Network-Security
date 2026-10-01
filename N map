@@ -1,0 +1,24 @@
+cat nmap_report.txt
+# Nmap 7.99 scan initiated Thu Oct  1 03:13:45 2026 as: /usr/lib/nmap/nmap --privileged -sV -O -oN nmap_report.txt 10.0.2.2
+Nmap scan report for 10.0.2.2
+Host is up (0.0013s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE         VERSION
+135/tcp  open  msrpc           Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp  open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+3306/tcp open  mysql           MySQL 8.0.46
+8090/tcp open  tcpwrapped
+MAC Address: 52:54:00:12:35:00 (QEMU virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: VoIP adapter|bridge|general purpose|printer|switch
+Running (JUST GUESSING): AT&T embedded (95%), Oracle Virtualbox (90%), Slirp (90%), QEMU (89%), HP embedded (86%), Minolta embedded (85%), NEC embedded (85%), Cisco embedded (85%)
+OS CPE: cpe:/a:oracle:vm_virtualbox cpe:/a:danny_gasparovski:slirp cpe:/a:qemu:qemu cpe:/h:cisco:sg_500
+Aggressive OS guesses: AT&T BGW210 voice gateway (95%), Oracle Virtualbox Slirp NAT bridge (90%), QEMU user mode network gateway (89%), HP 9100c Digital Sender printer (J3113A) (86%), Minolta Di550 laser printer (85%), NEC SuperScript printer (85%), Cisco SG 500 switch (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Oct  1 03:14:04 2026 -- 1 IP address (1 host up) scanned in 18.54 seconds
